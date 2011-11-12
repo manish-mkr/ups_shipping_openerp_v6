@@ -2,17 +2,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Standalone Shipping Client &mdash; UPS Integration with OpenERP v0.2 documentation</title>
+    <title>Standalone Shipping Client &mdash; UPS Shipping 0.1 documentation</title>
+    
     <link rel="stylesheet" href="_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '',
-        VERSION:     '0.2',
+        VERSION:     '0.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -21,8 +24,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
-    <link rel="top" title="UPS Integration with OpenERP v0.2 documentation" href="index.html" />
+    <link rel="top" title="UPS Shipping 0.1 documentation" href="index.html" />
     <link rel="next" title="Stock Integrated Shipping Client" href="SISC.html" />
     <link rel="prev" title="Configuration" href="configuration.html" /> 
   </head>
@@ -34,15 +36,12 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
           <a href="SISC.html" title="Stock Integrated Shipping Client"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="configuration.html" title="Configuration"
              accesskey="P">previous</a> |</li>
-        <li><a href="index.html">UPS Integration with OpenERP v0.2 documentation</a> &raquo;</li> 
+        <li><a href="index.html">UPS Shipping 0.1 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -56,34 +55,40 @@
 <p>In the Standalone usage you can create custom shipments using the OpenERP
 interface. To access this functionality open <em>Warehouse &gt;&gt; UPS</em> Shipping Register.</p>
 <img alt="_images/Screenshot8.png" src="_images/Screenshot8.png" style="width: 1000px;" />
-<div class="section" id="illustration-7-standalone-mode-menu">
-<h2><strong>Illustration 7</strong>: <em>Standalone Mode Menu</em><a class="headerlink" href="#illustration-7-standalone-mode-menu" title="Permalink to this headline">¶</a></h2>
-<img alt="_images/Screenshot9.png" src="_images/Screenshot9.png" style="width: 1000px;" />
+<div class="admonition-illustration-3 admonition">
+<p class="first admonition-title"><strong>Illustration 3</strong></p>
+<p class="last"><em>Standalone Mode Menu</em></p>
 </div>
-<div class="section" id="illustration-8-example-in-standalone-mode">
-<h2><strong>Illustration 8</strong>: <em>Example in Standalone Mode</em><a class="headerlink" href="#illustration-8-example-in-standalone-mode" title="Permalink to this headline">¶</a></h2>
-<p>This figure shows how a new package is created.</p>
+<img alt="_images/Screenshot9.png" src="_images/Screenshot9.png" style="width: 1000px;" />
+<div class="admonition-illustration-4 admonition">
+<p class="first admonition-title"><strong>Illustration 4</strong></p>
+<p><em>Example in Standalone Mode</em></p>
+<p class="last">This figure shows how a new package is created.</p>
+</div>
 <p>After entering the required information, you can click request and the program
 will communicate with the UPS server and fetch the billed weight, and amount
 for shipping as shown below.</p>
 <img alt="_images/Screenshot16.png" src="_images/Screenshot16.png" style="width: 1000px;" />
+<div class="admonition-illustration-5 admonition">
+<p class="first admonition-title"><strong>Illustration 5</strong></p>
+<p class="last"><em>Confirmed Shipping Awaiting Acceptance</em></p>
 </div>
-<div class="section" id="illustration-9-confirmed-shipping-awaiting-acceptance">
-<h2><strong>Illustration 9</strong>: <em>Confirmed Shipping Awaiting Acceptance</em><a class="headerlink" href="#illustration-9-confirmed-shipping-awaiting-acceptance" title="Permalink to this headline">¶</a></h2>
 <img alt="_images/Screenshot17.png" src="_images/Screenshot17.png" style="width: 1000px;" />
+<div class="admonition-illustration-6 admonition">
+<p class="first admonition-title"><strong>Illustration 6</strong></p>
+<p class="last"><em>Billed Weight &amp; Amount from UPS</em></p>
 </div>
-<div class="section" id="illustration-10-billed-weight-amount-from-ups">
-<h2><strong>Illustration 10</strong>: <em>Billed Weight &amp; Amount from UPS</em><a class="headerlink" href="#illustration-10-billed-weight-amount-from-ups" title="Permalink to this headline">¶</a></h2>
 <img alt="_images/Screenshot18.png" src="_images/Screenshot18.png" style="width: 1000px;" />
+<div class="admonition-illustration-7 admonition">
+<p class="first admonition-title"><strong>Illustration 7</strong></p>
+<p><em>Tracking Number</em></p>
+<p class="last">Output from which label could be downloaded.</p>
 </div>
-<div class="section" id="illustration-11-tracking-number">
-<h2><strong>Illustration 11</strong>: <em>Tracking Number</em><a class="headerlink" href="#illustration-11-tracking-number" title="Permalink to this headline">¶</a></h2>
-<p>Output from which label could be downloaded.</p>
 <img alt="_images/Screenshot19.png" src="_images/Screenshot19.png" style="width: 1000px;" />
-</div>
-<div class="section" id="illustration-12-shipping-label">
-<h2><strong>Illustration 12</strong>: <em>Shipping Label</em><a class="headerlink" href="#illustration-12-shipping-label" title="Permalink to this headline">¶</a></h2>
-<p>The label will open in your preferred image viewer.</p>
+<div class="admonition-illustration-8 admonition">
+<p class="first admonition-title"><strong>Illustration 8</strong></p>
+<p><em>Shipping Label</em></p>
+<p class="last">The label will open in your preferred image viewer.</p>
 </div>
 </div>
 
@@ -96,19 +101,6 @@ for shipping as shown below.</p>
             <p class="logo"><a href="index.html">
               <img class="logo" src="_static/128-128.png" alt="Logo"/>
             </a></p>
-  <h3><a href="index.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Standalone Shipping Client</a><ul>
-<li><a class="reference internal" href="#illustration-7-standalone-mode-menu"><strong>Illustration 7</strong>: <em>Standalone Mode Menu</em></a></li>
-<li><a class="reference internal" href="#illustration-8-example-in-standalone-mode"><strong>Illustration 8</strong>: <em>Example in Standalone Mode</em></a></li>
-<li><a class="reference internal" href="#illustration-9-confirmed-shipping-awaiting-acceptance"><strong>Illustration 9</strong>: <em>Confirmed Shipping Awaiting Acceptance</em></a></li>
-<li><a class="reference internal" href="#illustration-10-billed-weight-amount-from-ups"><strong>Illustration 10</strong>: <em>Billed Weight &amp; Amount from UPS</em></a></li>
-<li><a class="reference internal" href="#illustration-11-tracking-number"><strong>Illustration 11</strong>: <em>Tracking Number</em></a></li>
-<li><a class="reference internal" href="#illustration-12-shipping-label"><strong>Illustration 12</strong>: <em>Shipping Label</em></a></li>
-</ul>
-</li>
-</ul>
-
   <h4>Previous topic</h4>
   <p class="topless"><a href="configuration.html"
                         title="previous chapter">Configuration</a></p>
@@ -123,7 +115,7 @@ for shipping as shown below.</p>
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" size="18" />
+      <input type="text" name="q" />
       <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
@@ -144,20 +136,17 @@ for shipping as shown below.</p>
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
           <a href="SISC.html" title="Stock Integrated Shipping Client"
              >next</a> |</li>
         <li class="right" >
           <a href="configuration.html" title="Configuration"
              >previous</a> |</li>
-        <li><a href="index.html">UPS Integration with OpenERP v0.2 documentation</a> &raquo;</li> 
+        <li><a href="index.html">UPS Shipping 0.1 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
-        &copy; Copyright 2011, Openlabs Technologies &amp; Consulting (P) Limited.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+        &copy; Copyright 2011, Openlabs Technologies &amp; Consulting (P) ltd..
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.
     </div>
   </body>
 </html>
