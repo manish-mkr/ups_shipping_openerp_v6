@@ -14,9 +14,7 @@ Contents:
    configuration.rst
    SSC.rst
    SISC.rst
-   Aboutus.rst
-   api_reference.rst
-
+   about.rst
 
 
 Indices and tables

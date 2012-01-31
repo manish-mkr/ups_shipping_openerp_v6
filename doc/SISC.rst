@@ -2,73 +2,73 @@ Stock Integrated Shipping Client
 ********************************
 
 The module is tightly integrated with Stock Picking of OpenERP. However before 
-using it with shippping some Pre-Configuration needs to be done:
+using it with shippping some Pre-Configuration needs to be done. Here the
+pre-configuration is defined inside the topic Simple Notes.
 
-Pre-Configuration
-=================
+Simple Notes
+============
 
-All products have Net Weight. Prior to the installation of this module Net 
-Weights were not manadatory.
+All products must have Net Weight now. Prior to the installation of this
+module Net Weights were not manadatory.
 
-.. image:: _images/Screenshot20.png
-    :width: 1000
+.. figure:: _images/Screenshot20.png
+   :width: 1000
+
+   **Sample Product Screen** : Here it is shown that the ``Net Weight`` field
+   is manadatory.
+
+.. figure:: _images/Screenshot21.png
+   :width: 1000
     
-.. admonition:: **Illustration 9**
-
-    *Sample Product Screen*
-    Stock location must have an address. 
-
-.. image:: _images/Screenshot21.png
-    :width: 1000
-    
-.. admonition:: **Illustration 10**
-
-    *Setting address to Stock Location as*: 
-    *Warehouse >> Configuration >> Warehouse Management >> Location*
+   **Setting address to Stock Location**: The Location address needs to be
+   set to the stock location. To set the address go to *Warehouse >>
+   Configuration >> Warehouse Management >> Location*.
     
 
 Using with Stock Picking
 ========================
 
 The Stock Picking screen will now show an extra tab for shipping information 
-after products are selected and state of the picking is done.
+after products are selected and state of the picking is **Done** as shown in
+the figure below.
 
-.. image:: _images/Screenshot22.png
-    :width: 1000
+.. figure:: _images/Screenshot22.png
+   :width: 1000
 
-.. admonition:: **Illustration 11**
+   *Stock Picking with Shipping Information tab*
 
-    *Stock Picking with Shipping tab*
+Now there are two options to proceed further:
 
-*Option 1*: Select an already created Shipping record (in the Standalone Mode) 
-to the picking
+**Option 1**: Select an already created Shipping record (in the Standalone
+Mode) to the picking
 
-.. image:: _images/Screenshot23.png
-    :width: 1000
+.. figure:: _images/Screenshot23.png
+   :width: 1000
 
-.. admonition:: **Illustration 12**
+   **Associating with existing Shipping Record**: To proceed with an
+   existing shipping record, e.g. the record created for the Standalone
+   Shipping Client, Select the option ``Use Existing Shipping Record``.
 
-    *Associating with existing Shipping Record*.
-
-*Option 2*: Or choose to create a new Shipping Record from the Pre-Filled data 
+**Option 2**: Or choose to create a new Shipping Record from the Pre-Filled data 
 in the stock move.
 
-.. image:: _images/Screenshot24.png
-    :width: 1000
+.. figure:: _images/Screenshot24.png
+   :width: 1000
 
-.. admonition:: **Illustration 13**
-
-    *Generating new shipping from Stock Picking Information*
+   **Generating new shipping from Stock Picking Information** : Untick the
+   option ``Use Existing Shipping Record`` to create a new shipping.
     
-1. *Package Weights*: Package weights indicate the various packings you may 
+1. ``Packing Weights``: Packing weights indicate the various packings you may 
    have in the shipment. For example you may decide to ship a packet of 15 Kgs 
    in two packs of 10 and 5 each or 7 and 8 each. You can indicate your weights 
    by seperating them by commas as shown in the figure. By default the weight 
    is automatically computed and packs are created for each line in the picking.
    
-2. *Service Type*: Refer UPS manual
+2. ``Service Type``: Some service types are defined for UPS services, e.g.
+   `USP Standard`. Select the one most suitable to you.
    
-3. *Package Type*: Refer UPS manual - All products have same picking.
+3. ``Package Type``: The package types are defined in this section, e.g.
+   `Customer Supplied Package`.
 
 On clicking *Generate Shipping* a new shipping record is created 
 (just as with the standalone mode). The created record can be seen in the field 
@@ -81,9 +81,7 @@ label.
 
 The screenshots are below:
 
-.. image:: _images/Screenshot25.png
-    :width: 1000
+.. figure:: _images/Screenshot25.png
+   :width: 1000
 
-.. admonition:: **Illustration 14**
-
-    *Final screens of Stock after Generation of picking*.
+   *Final screen of Stock after Generation of picking*

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # UPS Shipping documentation build configuration file, created by
-# sphinx-quickstart on Sat Oct 29 18:55:19 2011.
+# sphinx-quickstart on Tue Jan 31 15:39:56 2012.
 #
 # This file is execfile()d with the current directory set to its containing dir.
 #
@@ -19,8 +19,8 @@ import sys, os
 #sys.path.insert(0, os.path.abspath('.'))
 
 sys.path.extend([
-   os.path.abspath('../../../'),
-   os.path.abspath('../../')
+    os.path.abspath('../../../'),
+    os.path.abspath('../../')
 ])
 
 # -- General configuration -----------------------------------------------------
@@ -30,7 +30,7 @@ sys.path.extend([
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.doctest', 'sphinx.ext.intersphinx', 'sphinx.ext.ifconfig']
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.doctest', 'sphinx.ext.intersphinx', 'sphinx.ext.mathjax', 'sphinx.ext.ifconfig']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -46,7 +46,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'UPS Shipping'
-copyright = u'2011, Openlabs Technologies & Consulting (P) ltd.'
+copyright = u'2012, Openlabs Technologies & Consulting (P) Ltd.'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -115,12 +115,12 @@ html_theme = 'nature'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = '/home/openlabs/workspace/openerp6/src/openerp-server-6.0.3/bin/addons/ups/source/_images/128-128.png'
+html_logo = '_images/128-128.png'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
-#html_favicon = None
+html_favicon = '_images/favicon.ico'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -189,12 +189,12 @@ latex_elements = {
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   ('index', 'UPSShipping.tex', u'UPS Shipping Documentation',
-   u'Openlabs Technologies \\& Consulting (P) ltd.', 'manual'),
+   u'Openlabs Technologies \\& Consulting (P) Ltd.', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-latex_logo = '/home/openlabs/workspace/openerp6/src/openerp-server-6.0.3/bin/addons/ups/source/_images/128-128.png'
+latex_logo = '_images/128-128.png'
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
@@ -219,7 +219,7 @@ latex_logo = '/home/openlabs/workspace/openerp6/src/openerp-server-6.0.3/bin/add
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'upsshipping', u'UPS Shipping Documentation',
-     [u'Openlabs Technologies & Consulting (P) ltd.'], 1)
+     [u'Openlabs Technologies & Consulting (P) Ltd.'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -232,8 +232,9 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'UPSShipping', u'UPS Shipping Documentation', u'Openlabs Technologies & Consulting (P) ltd.',
-   'UPSShipping', 'One line description of project.', 'Miscellaneous'),
+  ('index', 'UPSShipping', u'UPS Shipping Documentation',
+   u'Openlabs Technologies & Consulting (P) Ltd.', 'UPSShipping', 'One line description of project.',
+   'Miscellaneous'),
 ]
 
 # Documents to append as an appendix to all manuals.
@@ -244,3 +245,50 @@ texinfo_documents = [
 
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 #texinfo_show_urls = 'footnote'
+
+
+# -- Options for Epub output ---------------------------------------------------
+
+# Bibliographic Dublin Core info.
+epub_title = u'UPS Shipping'
+epub_author = u'Openlabs Technologies & Consulting (P) Ltd.'
+epub_publisher = u'Openlabs Technologies & Consulting (P) Ltd.'
+epub_copyright = u'2012, Openlabs Technologies & Consulting (P) Ltd.'
+
+# The language of the text. It defaults to the language option
+# or en if the language is not set.
+#epub_language = ''
+
+# The scheme of the identifier. Typical schemes are ISBN or URL.
+#epub_scheme = ''
+
+# The unique identifier of the text. This can be a ISBN number
+# or the project homepage.
+#epub_identifier = ''
+
+# A unique identification for the text.
+#epub_uid = ''
+
+# A tuple containing the cover image and cover page html template filenames.
+#epub_cover = ()
+
+# HTML files that should be inserted before the pages created by sphinx.
+# The format is a list of tuples containing the path and title.
+#epub_pre_files = []
+
+# HTML files shat should be inserted after the pages created by sphinx.
+# The format is a list of tuples containing the path and title.
+#epub_post_files = []
+
+# A list of files that should not be packed into the epub file.
+#epub_exclude_files = []
+
+# The depth of the table of contents in toc.ncx.
+#epub_tocdepth = 3
+
+# Allow duplicate toc entries.
+#epub_tocdup = True
+
+
+# Example configuration for intersphinx: refer to the Python standard library.
+intersphinx_mapping = {'http://docs.python.org/': None}

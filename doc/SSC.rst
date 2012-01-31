@@ -4,55 +4,51 @@ Standalone Shipping Client
 In the Standalone usage you can create custom shipments using the OpenERP 
 interface. To access this functionality open *Warehouse >> UPS* Shipping Register.
 
-.. image:: _images/Screenshot8.png
-    :width: 1000
+.. figure:: _images/Screenshot8.png
+   :width: 1000
 
-.. admonition:: **Illustration 3** 
+   **Standalone Mode Menu**
 
-    *Standalone Mode Menu*
-
-.. image:: _images/Screenshot9.png
+.. figure:: _images/Screenshot9.png
     :width: 1000
     
-.. admonition:: **Illustration 4** 
+    **Example in Standalone Mode** : This figure shows how a new package is
+    created. The fields are explained as below:   
 
-    *Example in Standalone Mode*
-    
-    This figure shows how a new package is created.
+    * ``Shipper Address`` : The address of the Shipper
+    * ``Shipping Address`` : The shipping address to which the product has to be
+      delivered.
+    * ``From Address`` : The address from where the shipping has to be done.
+    * ``Service Type`` : The Service Type
 
-After entering the required information, you can click request and the program 
-will communicate with the UPS server and fetch the billed weight, and amount 
-for shipping as shown below.
+After providing the necessary information, click on **Request**. Billed
+weight and total amount will be fetched from UPS. 
 
-.. image:: _images/Screenshot16.png
+.. figure:: _images/Screenshot16.png
     :width: 1000
     
-.. admonition:: **Illustration 5**
+    **Confirmed Shipping Awaiting Acceptance**
 
-    *Confirmed Shipping Awaiting Acceptance*
+.. figure:: _images/Screenshot17.png
+   :width: 1000
 
-.. image:: _images/Screenshot17.png
-    :width: 1000
+   **Billed Weight & Amount from UPS** : Now go to ``UPS Response Details`` tab
+   to view the *Billed Weight*, *Total Amount* etc.
 
-.. admonition:: **Illustration 6**
 
-    *Billed Weight & Amount from UPS*
+Click on **Accept** in the ``UPS Response Details`` tab. A new record
+will be created in the `UPS Shipping Register`. Double click the newly
+generated record.
 
-.. image:: _images/Screenshot18.png
-    :width: 1000
+.. figure:: _images/Screenshot18.png
+   :width: 1000
     
-.. admonition:: **Illustration 7**
+   **Tracking Number** : As the record is selected a new dialog box **OpenERP -
+   Packages** will pop-up. From this Output the label can be downloaded.
+   Click on **Open** to view the label.
 
-    *Tracking Number*
-
-    Output from which label could be downloaded.
-
-.. image:: _images/Screenshot19.png
-    :width: 1000
+.. figure:: _images/Screenshot19.png
+   :width: 1000
     
-.. admonition:: **Illustration 8** 
-
-    *Shipping Label*
-
-    The label will open in your preferred image viewer.
+   **Shipping Label** : The label will open in your preferred image viewer.
 
