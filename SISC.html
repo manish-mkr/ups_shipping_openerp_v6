@@ -24,8 +24,11 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="author" title="About these documents" href="about.html" />
     <link rel="top" title="UPS Shipping 0.1 documentation" href="index.html" />
-    <link rel="next" title="About Openlabs Technologies and Consulting Private Limited" href="Aboutus.html" />
+    <link rel="next" title="About Openlabs Technologies and Consulting Private Limited" href="about.html" />
     <link rel="prev" title="Standalone Shipping Client" href="SSC.html" /> 
   </head>
   <body>
@@ -36,7 +39,7 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="Aboutus.html" title="About Openlabs Technologies and Consulting Private Limited"
+          <a href="about.html" title="About Openlabs Technologies and Consulting Private Limited"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="SSC.html" title="Standalone Shipping Client"
@@ -53,55 +56,59 @@
   <div class="section" id="stock-integrated-shipping-client">
 <h1>Stock Integrated Shipping Client<a class="headerlink" href="#stock-integrated-shipping-client" title="Permalink to this headline">¶</a></h1>
 <p>The module is tightly integrated with Stock Picking of OpenERP. However before
-using it with shippping some Pre-Configuration needs to be done:</p>
-<div class="section" id="pre-configuration">
-<h2>Pre-Configuration<a class="headerlink" href="#pre-configuration" title="Permalink to this headline">¶</a></h2>
-<p>All products have Net Weight. Prior to the installation of this module Net
-Weights were not manadatory.</p>
+using it with shippping some Pre-Configuration needs to be done. Here the
+pre-configuration is defined inside the topic Simple Notes.</p>
+<div class="section" id="simple-notes">
+<h2>Simple Notes<a class="headerlink" href="#simple-notes" title="Permalink to this headline">¶</a></h2>
+<p>All products must have Net Weight now. Prior to the installation of this
+module Net Weights were not manadatory.</p>
+<div class="figure">
 <img alt="_images/Screenshot20.png" src="_images/Screenshot20.png" style="width: 1000px;" />
-<div class="admonition-illustration-9 admonition">
-<p class="first admonition-title"><strong>Illustration 9</strong></p>
-<p class="last"><em>Sample Product Screen</em>
-Stock location must have an address.</p>
+<p class="caption"><strong>Sample Product Screen</strong> : Here it is shown that the <tt class="docutils literal"><span class="pre">Net</span> <span class="pre">Weight</span></tt> field
+is manadatory.</p>
 </div>
+<div class="figure">
 <img alt="_images/Screenshot21.png" src="_images/Screenshot21.png" style="width: 1000px;" />
-<div class="admonition-illustration-10 admonition">
-<p class="first admonition-title"><strong>Illustration 10</strong></p>
-<p class="last"><em>Setting address to Stock Location as</em>:
-<em>Warehouse &gt;&gt; Configuration &gt;&gt; Warehouse Management &gt;&gt; Location</em></p>
+<p class="caption"><strong>Setting address to Stock Location</strong>: The Location address needs to be
+set to the stock location. To set the address go to <em>Warehouse &gt;&gt;
+Configuration &gt;&gt; Warehouse Management &gt;&gt; Location</em>.</p>
 </div>
 </div>
 <div class="section" id="using-with-stock-picking">
 <h2>Using with Stock Picking<a class="headerlink" href="#using-with-stock-picking" title="Permalink to this headline">¶</a></h2>
 <p>The Stock Picking screen will now show an extra tab for shipping information
-after products are selected and state of the picking is done.</p>
+after products are selected and state of the picking is <strong>Done</strong> as shown in
+the figure below.</p>
+<div class="figure">
 <img alt="_images/Screenshot22.png" src="_images/Screenshot22.png" style="width: 1000px;" />
-<div class="admonition-illustration-11 admonition">
-<p class="first admonition-title"><strong>Illustration 11</strong></p>
-<p class="last"><em>Stock Picking with Shipping tab</em></p>
+<p class="caption"><em>Stock Picking with Shipping Information tab</em></p>
 </div>
-<p><em>Option 1</em>: Select an already created Shipping record (in the Standalone Mode)
-to the picking</p>
+<p>Now there are two options to proceed further:</p>
+<p><strong>Option 1</strong>: Select an already created Shipping record (in the Standalone
+Mode) to the picking</p>
+<div class="figure">
 <img alt="_images/Screenshot23.png" src="_images/Screenshot23.png" style="width: 1000px;" />
-<div class="admonition-illustration-12 admonition">
-<p class="first admonition-title"><strong>Illustration 12</strong></p>
-<p class="last"><em>Associating with existing Shipping Record</em>.</p>
+<p class="caption"><strong>Associating with existing Shipping Record</strong>: To proceed with an
+existing shipping record, e.g. the record created for the Standalone
+Shipping Client, Select the option <tt class="docutils literal"><span class="pre">Use</span> <span class="pre">Existing</span> <span class="pre">Shipping</span> <span class="pre">Record</span></tt>.</p>
 </div>
-<p><em>Option 2</em>: Or choose to create a new Shipping Record from the Pre-Filled data
+<p><strong>Option 2</strong>: Or choose to create a new Shipping Record from the Pre-Filled data
 in the stock move.</p>
+<div class="figure">
 <img alt="_images/Screenshot24.png" src="_images/Screenshot24.png" style="width: 1000px;" />
-<div class="admonition-illustration-13 admonition">
-<p class="first admonition-title"><strong>Illustration 13</strong></p>
-<p class="last"><em>Generating new shipping from Stock Picking Information</em></p>
+<p class="caption"><strong>Generating new shipping from Stock Picking Information</strong> : Untick the
+option <tt class="docutils literal"><span class="pre">Use</span> <span class="pre">Existing</span> <span class="pre">Shipping</span> <span class="pre">Record</span></tt> to create a new shipping.</p>
 </div>
 <ol class="arabic simple">
-<li><em>Package Weights</em>: Package weights indicate the various packings you may
+<li><tt class="docutils literal"><span class="pre">Packing</span> <span class="pre">Weights</span></tt>: Packing weights indicate the various packings you may
 have in the shipment. For example you may decide to ship a packet of 15 Kgs
 in two packs of 10 and 5 each or 7 and 8 each. You can indicate your weights
 by seperating them by commas as shown in the figure. By default the weight
 is automatically computed and packs are created for each line in the picking.</li>
-<li><em>Service Type</em>: Refer UPS manual</li>
-<li><em>Package Type</em>: Refer UPS manual - All products have same picking.</li>
+<li><tt class="docutils literal"><span class="pre">Service</span> <span class="pre">Type</span></tt>: Some service types are defined for UPS services, e.g.
+<cite>USP Standard</cite>. Select the one most suitable to you.</li>
+<li><tt class="docutils literal"><span class="pre">Package</span> <span class="pre">Type</span></tt>: The package types are defined in this section, e.g.
+<cite>Customer Supplied Package</cite>.</li>
 </ol>
 <p>On clicking <em>Generate Shipping</em> a new shipping record is created
 (just as with the standalone mode). The created record can be seen in the field
@@ -110,10 +117,9 @@ for &#8216;UPS Shipping Register&#8217;. And clicking the Folder Icon opens the 
 <p>It can be confirmed by clicking &#8216;Request&#8217; then &#8216;Accept&#8217;, which generates the
 label.</p>
 <p>The screenshots are below:</p>
+<div class="figure">
 <img alt="_images/Screenshot25.png" src="_images/Screenshot25.png" style="width: 1000px;" />
-<div class="admonition-illustration-14 admonition">
-<p class="first admonition-title"><strong>Illustration 14</strong></p>
-<p class="last"><em>Final screens of Stock after Generation of picking</em>.</p>
+<p class="caption"><em>Final screens of Stock after Generation of picking</em></p>
 </div>
 </div>
 </div>
@@ -130,7 +136,7 @@ label.</p>
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Stock Integrated Shipping Client</a><ul>
-<li><a class="reference internal" href="#pre-configuration">Pre-Configuration</a></li>
+<li><a class="reference internal" href="#simple-notes">Simple Notes</a></li>
 <li><a class="reference internal" href="#using-with-stock-picking">Using with Stock Picking</a></li>
 </ul>
 </li>
@@ -140,7 +146,7 @@ label.</p>
   <p class="topless"><a href="SSC.html"
                         title="previous chapter">Standalone Shipping Client</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="Aboutus.html"
+  <p class="topless"><a href="about.html"
                         title="next chapter">About Openlabs Technologies and Consulting Private Limited</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
@@ -171,7 +177,7 @@ label.</p>
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="Aboutus.html" title="About Openlabs Technologies and Consulting Private Limited"
+          <a href="about.html" title="About Openlabs Technologies and Consulting Private Limited"
              >next</a> |</li>
         <li class="right" >
           <a href="SSC.html" title="Standalone Shipping Client"
@@ -180,8 +186,8 @@ label.</p>
       </ul>
     </div>
     <div class="footer">
-        &copy; Copyright 2011, Openlabs Technologies &amp; Consulting (P) ltd..
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.
+        &copy; Copyright 2012, Openlabs Technologies &amp; Consulting (P) Ltd..
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.2.
     </div>
   </body>
 </html>

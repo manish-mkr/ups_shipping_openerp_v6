@@ -7,7 +7,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Configuration &mdash; UPS Shipping 0.1 documentation</title>
+    <title>UPS Shipping &mdash; UPS Shipping 0.1 documentation</title>
     
     <link rel="stylesheet" href="_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -24,6 +24,9 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="author" title="About these documents" href="about.html" />
     <link rel="top" title="UPS Shipping 0.1 documentation" href="index.html" />
     <link rel="next" title="Standalone Shipping Client" href="SSC.html" />
     <link rel="prev" title="Welcome to UPS Shipping’s documentation!" href="index.html" /> 
@@ -50,23 +53,40 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="configuration">
-<h1>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="ups-shipping">
+<h1>UPS Shipping<a class="headerlink" href="#ups-shipping" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>The <strong>UPS shipping</strong> module lets you to integrate its shipping functionality
+directly in to OpenERP. The module streamlines all your shipping with no
+additional expenses for either software or hardware and giving access to
+multiple UPS services</p>
+</div>
+<div class="section" id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
 <p>The module requires certain initial configuration to be done to set the API
 username and password.</p>
-<div class="admonition-illustration-1 admonition">
-<p class="first admonition-title"><strong>Illustration 1</strong></p>
-<p class="last"><em>Configuration of Company menu</em></p>
-</div>
+<div class="figure">
 <img alt="_images/Screenshot5.png" src="_images/Screenshot5.png" style="width: 1000px;" />
-<p>Go to <em>Administration &gt;&gt; Companies</em> and open Companies.
-Set the UPS License Key, Shipper Number, UPS User-Name, UPS Password.
-Tick the Is Test and fill the UOM Weights, Length field for configuration.</p>
+<p class="caption"><em>Configuration of Company menu</em></p>
+</div>
+<p>Go to <em>Administration &gt;&gt; Companies</em> and select the company.</p>
+<div class="figure">
 <img alt="_images/Screenshot7.png" src="_images/Screenshot7.png" style="width: 1000px;" />
-<div class="admonition-illustration-2 admonition">
-<p class="first admonition-title"><strong>Illustration 2</strong></p>
-<p><em>Setting the API</em></p>
-<p class="last">The Module is designed to work as both a Standalone UPS Shipping and with the
+<p class="caption"><em>Setting the API</em></p>
+</div>
+<p>Now in the form view of the company select the <tt class="docutils literal"><span class="pre">Configuration</span></tt> tab.
+Set the UPS License Key, Shipper Number, UPS User-Name, UPS User Password.
+Tick the <tt class="docutils literal"><span class="pre">Is</span> <span class="pre">Test</span></tt> and fill the UOM Weights, Length field for
+configuration.</p>
+<p>The fields/UPS credentials are explained as below:</p>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">UPS</span> <span class="pre">License</span> <span class="pre">Key</span></tt> : The License Key related to the account</li>
+<li><tt class="docutils literal"><span class="pre">Shipper</span> <span class="pre">Number</span></tt> : The Shipper Number provided</li>
+<li><tt class="docutils literal"><span class="pre">UPS</span> <span class="pre">User-Name</span></tt> : UserName of UPS account</li>
+<li><tt class="docutils literal"><span class="pre">UPS</span> <span class="pre">User</span> <span class="pre">Password</span></tt> : Password of the UPS account</li>
+</ul>
+<p>The Module is designed to work as both a Standalone UPS Shipping and with the
 Stock Module. The working of two modules is explained in the next topic.</p>
 </div>
 </div>
@@ -80,6 +100,15 @@ Stock Module. The working of two modules is explained in the next topic.</p>
             <p class="logo"><a href="index.html">
               <img class="logo" src="_static/128-128.png" alt="Logo"/>
             </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">UPS Shipping</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#configuration">Configuration</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="index.html"
                         title="previous chapter">Welcome to UPS Shipping&#8217;s documentation!</a></p>
@@ -124,8 +153,8 @@ Stock Module. The working of two modules is explained in the next topic.</p>
       </ul>
     </div>
     <div class="footer">
-        &copy; Copyright 2011, Openlabs Technologies &amp; Consulting (P) ltd..
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.
+        &copy; Copyright 2012, Openlabs Technologies &amp; Consulting (P) Ltd..
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.2.
     </div>
   </body>
 </html>

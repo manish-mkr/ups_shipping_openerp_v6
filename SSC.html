@@ -24,9 +24,12 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="author" title="About these documents" href="about.html" />
     <link rel="top" title="UPS Shipping 0.1 documentation" href="index.html" />
     <link rel="next" title="Stock Integrated Shipping Client" href="SISC.html" />
-    <link rel="prev" title="Configuration" href="configuration.html" /> 
+    <link rel="prev" title="UPS Shipping" href="configuration.html" /> 
   </head>
   <body>
     <div class="related">
@@ -39,7 +42,7 @@
           <a href="SISC.html" title="Stock Integrated Shipping Client"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="configuration.html" title="Configuration"
+          <a href="configuration.html" title="UPS Shipping"
              accesskey="P">previous</a> |</li>
         <li><a href="index.html">UPS Shipping 0.1 documentation</a> &raquo;</li> 
       </ul>
@@ -54,41 +57,47 @@
 <h1>Standalone Shipping Client<a class="headerlink" href="#standalone-shipping-client" title="Permalink to this headline">¶</a></h1>
 <p>In the Standalone usage you can create custom shipments using the OpenERP
 interface. To access this functionality open <em>Warehouse &gt;&gt; UPS</em> Shipping Register.</p>
+<div class="figure">
 <img alt="_images/Screenshot8.png" src="_images/Screenshot8.png" style="width: 1000px;" />
-<div class="admonition-illustration-3 admonition">
-<p class="first admonition-title"><strong>Illustration 3</strong></p>
-<p class="last"><em>Standalone Mode Menu</em></p>
+<p class="caption"><strong>Standalone Mode Menu</strong></p>
 </div>
+<div class="figure">
 <img alt="_images/Screenshot9.png" src="_images/Screenshot9.png" style="width: 1000px;" />
-<div class="admonition-illustration-4 admonition">
-<p class="first admonition-title"><strong>Illustration 4</strong></p>
-<p><em>Example in Standalone Mode</em></p>
-<p class="last">This figure shows how a new package is created.</p>
+<p class="caption"><strong>Example in Standalone Mode</strong> : This figure shows how a new package is
+created. The fields are explained as below:</p>
+<div class="legend">
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">Shipper</span> <span class="pre">Address</span></tt> : The address of the Shipper</li>
+<li><tt class="docutils literal"><span class="pre">Shipping</span> <span class="pre">Address</span></tt> : The shipping address to which the product has to be
+delivered.</li>
+<li><tt class="docutils literal"><span class="pre">From</span> <span class="pre">Address</span></tt> : The address from where the shipping has to be done.</li>
+<li><tt class="docutils literal"><span class="pre">Service</span> <span class="pre">Type</span></tt> : The Service Type</li>
+</ul>
 </div>
-<p>After entering the required information, you can click request and the program
-will communicate with the UPS server and fetch the billed weight, and amount
-for shipping as shown below.</p>
+</div>
+<p>After providing the necessary information, click on <strong>Request</strong>. Billed
+weight and total amount will be fetched from UPS.</p>
+<div class="figure">
 <img alt="_images/Screenshot16.png" src="_images/Screenshot16.png" style="width: 1000px;" />
-<div class="admonition-illustration-5 admonition">
-<p class="first admonition-title"><strong>Illustration 5</strong></p>
-<p class="last"><em>Confirmed Shipping Awaiting Acceptance</em></p>
+<p class="caption"><strong>Confirmed Shipping Awaiting Acceptance</strong></p>
 </div>
+<div class="figure">
 <img alt="_images/Screenshot17.png" src="_images/Screenshot17.png" style="width: 1000px;" />
-<div class="admonition-illustration-6 admonition">
-<p class="first admonition-title"><strong>Illustration 6</strong></p>
-<p class="last"><em>Billed Weight &amp; Amount from UPS</em></p>
+<p class="caption"><strong>Billed Weight &amp; Amount from UPS</strong> : Now go to <tt class="docutils literal"><span class="pre">UPS</span> <span class="pre">Response</span> <span class="pre">Details</span></tt> tab
+to view the <em>Billed Weight</em>, <em>Total Amount</em> etc.</p>
 </div>
+<p>Click on <strong>Accept</strong> in the <tt class="docutils literal"><span class="pre">UPS</span> <span class="pre">Response</span> <span class="pre">Details</span></tt> tab. A new record
+will be created in the <cite>UPS Shipping Register</cite>. Double click the newly
+generated record.</p>
+<div class="figure">
 <img alt="_images/Screenshot18.png" src="_images/Screenshot18.png" style="width: 1000px;" />
-<div class="admonition-illustration-7 admonition">
-<p class="first admonition-title"><strong>Illustration 7</strong></p>
-<p><em>Tracking Number</em></p>
-<p class="last">Output from which label could be downloaded.</p>
+<p class="caption"><strong>Tracking Number</strong> : As the record is selected a new dialog box <strong>OpenERP -
+Packages</strong> will pop-up. From this Output the label can be downloaded.
+Click on <strong>Open</strong> to view the label.</p>
 </div>
+<div class="figure">
 <img alt="_images/Screenshot19.png" src="_images/Screenshot19.png" style="width: 1000px;" />
-<div class="admonition-illustration-8 admonition">
-<p class="first admonition-title"><strong>Illustration 8</strong></p>
-<p><em>Shipping Label</em></p>
-<p class="last">The label will open in your preferred image viewer.</p>
+<p class="caption"><strong>Shipping Label</strong> : The label will open in your preferred image viewer.</p>
 </div>
 </div>
 
@@ -103,7 +112,7 @@ for shipping as shown below.</p>
             </a></p>
   <h4>Previous topic</h4>
   <p class="topless"><a href="configuration.html"
-                        title="previous chapter">Configuration</a></p>
+                        title="previous chapter">UPS Shipping</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="SISC.html"
                         title="next chapter">Stock Integrated Shipping Client</a></p>
@@ -139,14 +148,14 @@ for shipping as shown below.</p>
           <a href="SISC.html" title="Stock Integrated Shipping Client"
              >next</a> |</li>
         <li class="right" >
-          <a href="configuration.html" title="Configuration"
+          <a href="configuration.html" title="UPS Shipping"
              >previous</a> |</li>
         <li><a href="index.html">UPS Shipping 0.1 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
-        &copy; Copyright 2011, Openlabs Technologies &amp; Consulting (P) ltd..
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.
+        &copy; Copyright 2012, Openlabs Technologies &amp; Consulting (P) Ltd..
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.2.
     </div>
   </body>
 </html>
